@@ -1,6 +1,6 @@
-# Euro Money Calculator
+# Money Calculator
 
-A simple Python program that calculates the total amount of money in Euros (€) based on user input for different denominations of Euro bills and coins.
+A simple Python program that calculates the total amount of money based on user input for different denominations of bills and coins.
 
 ## Table of Contents
 
@@ -13,38 +13,38 @@ A simple Python program that calculates the total amount of money in Euros (€)
 
 ## Description
 
-This Python program allows users to input the number of each Euro bill and coin denomination, excluding the €1 bill, and calculates the total amount in Euros.
+This Python program allows users to input the number of each bill and coin denomination, and calculates the total amount.
 
 ## Features
 
-- Calculates the total amount in Euros based on user input.
+- Calculates the total amount based on user input.
 - Handles non-numeric input gracefully and provides feedback.
 
 ## Installation
 
 1. Clone the repository to your local machine:
 
-   ```git clone https://github.com/your-username/euro-money-calculator.git```
+   ```git clone https://github.com/AlterraLaboratories/Money-Calculator.git```
 
 2. Navigate to the project directory:
    
-   ```cd euro-money-calculator```
+   ```cd Money-Calculator```
    
 3. Run the program:
 
-   ```python money_calculator.py```
+   ```python main.py```
 
 ## Usage
-Follow the installation instructions to set up the Euro Money Calculator on your local machine.
+Follow the installation instructions to set up the Money Calculator on your local machine.
 
-Execute the program by running python money_calculator.py.
+Execute the program by running `python main.py`.
 
-Enter the number of each Euro bill and coin denomination as prompted.
+Enter the number of each bill and coin denomination as prompted.
 
-The program will calculate and display the total amount in Euros.
+The program will calculate and display the total amount.
 
 ## Contributing
-Contributions to the Euro Money Calculator project are welcome. You can contribute by:
+Contributions to the Money Calculator project are welcome. You can contribute by:
 
 Opening issues for bug reports or feature requests.
 Submitting pull requests to address issues or implement new features.
