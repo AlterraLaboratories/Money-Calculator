@@ -27,6 +27,7 @@ This Python program allows users to input the number of each Euro bill and coin 
    ```git clone https://github.com/your-username/euro-money-calculator.git```
 
 2. Navigate to the project directory:
+   
    ```cd euro-money-calculator```
    
 3. Run the program:
