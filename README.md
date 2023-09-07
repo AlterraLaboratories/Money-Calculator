@@ -6,6 +6,7 @@ A simple Python program that calculates the total amount of money based on user 
 
 - [Description](#description)
 - [Features](#features)
+- [Currencies](#currencies)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
