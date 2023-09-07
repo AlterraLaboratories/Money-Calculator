@@ -6,6 +6,7 @@ A simple Python program that calculates the total amount of money based on user 
 
 - [Description](#description)
 - [Features](#features)
+- [Currencies](#currencies)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
@@ -19,6 +20,14 @@ This Python program allows users to input the number of each bill and coin denom
 
 - Calculates the total amount based on user input.
 - Handles non-numeric input gracefully and provides feedback.
+
+## Currencies
+
+- Euro
+- Dollar
+- Canadian Dollar
+- Pound
+
 
 ## Installation
 
