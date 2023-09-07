@@ -103,6 +103,48 @@ def calccaddollar():
     # Display the total amount in Canadian Dollars with 2 decimal places.
     print(f"\nTotal amount in Canadian Dollars: ${total_dollar:.2f}")
 
+def calcpound():
+    os.system('cls' if os.name == 'nt' else 'clear')  # Clear the screen.
+    print("Pound Money Calculator")  # Display a title for the Pound calculator.
+    print("Enter the number of each Pound Bill/Coin denomination:")  # Prompt the user to input the number of each Pound denomination.
+    
+    # Input the quantity of each Pound bill/coin denomination.
+    onep = int(input("Number of 1p coins: "))
+    os.system('cls' if os.name == 'nt' else 'clear')  # Clear the screen.
+    twop = int(input("Number of 2p coins: "))
+    os.system('cls' if os.name == 'nt' else 'clear')  # Clear the screen.
+    fivep = int(input("Number of 5p coins: "))
+    os.system('cls' if os.name == 'nt' else 'clear')  # Clear the screen.
+    tenp = int(input("Number of 10p coins: "))
+    os.system('cls' if os.name == 'nt' else 'clear')  # Clear the screen.
+    twentyp = int(input("Number of 20p coins: "))
+    os.system('cls' if os.name == 'nt' else 'clear')  # Clear the screen.
+    fiftyp = int(input("Number of 50p coins: "))
+    os.system('cls' if os.name == 'nt' else 'clear')  # Clear the screen.
+    one = int(input("Number of £1 coins: "))
+    os.system('cls' if os.name == 'nt' else 'clear')  # Clear the screen.
+    two = int(input("Number of £2 coins: "))
+    os.system('cls' if os.name == 'nt' else 'clear')  # Clear the screen.
+    five = int(input("Number of £5 bills: "))
+    os.system('cls' if os.name == 'nt' else 'clear')  # Clear the screen.
+    ten = int(input("Number of £10 bills: "))
+    os.system('cls' if os.name == 'nt' else 'clear')  # Clear the screen.
+    twenty = int(input("Number of £20 bills: "))
+    os.system('cls' if os.name == 'nt' else 'clear')  # Clear the screen.
+    fifty = int(input("Number of £50 bills: "))
+    os.system('cls' if os.name == 'nt' else 'clear')  # Clear the screen.
+    hundred = int(input("Number of £100 bills: "))
+    os.system('cls' if os.name == 'nt' else 'clear')  # Clear the screen.
+    
+    # Calculate the total amount in Pounds based on user input.
+    total_pounds = (onep * 0.01) + (twop * 0.02) + (fivep * 0.05) + (tenp * 0.10) + (twentyp * 0.25) + (fiftyp * 0.50) + \
+                   (one * 1) + (two * 2) + (five * 5) + (ten * 10) + \
+                   (twenty * 20) + (fifty * 50) + (hundred * 100)
+    
+    # Display the total amount in Pounds with 2 decimal places.
+    print(f"\nTotal amount in Pounds: ${total_pounds:.2f}")
+
+
 # Main loop that allows the user to choose a currency calculator or exit.
 while True:
     print("1. Choose currency.")
@@ -115,6 +157,7 @@ while True:
         print("1. Euro")
         print("2. Dollar")
         print("3. Canadian Dollar")
+        print("4. Pounds")
         
         selection = input("Selection: ")  # Prompt the user to select a currency calculator.
 
@@ -124,6 +167,8 @@ while True:
             calcdollar()  # Call the Dollar calculator function.
         elif selection == "3":
             calccaddollar()  # Call the Canadian Dollar calculator function.
+        elif selection == "4":
+            calcpound()
         else:
             print("Invalid selection.")  # Display an error message for an invalid selection.
     
