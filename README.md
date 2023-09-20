@@ -9,6 +9,7 @@ A simple Python program that calculates the total amount of money based on user 
 - [Currencies](#currencies)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Building](#building)
 - [Contributing](#contributing)
 - [License](#license)
 
