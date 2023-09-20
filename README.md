@@ -50,11 +50,18 @@ This Python program allows users to input the number of each bill and coin denom
 ## Usage
 Follow the installation instructions to set up the Money Calculator on your local machine.
 
-Execute the program by running `python main.py`.
+Execute the program by running `python main.py` or running the `main.exe` file.
 
 Enter the number of each bill and coin denomination as prompted.
 
 The program will calculate and display the total amount.
+
+## Building
+Use pyinstaller to build this project.
+
+1. Run ```pip install pyinstaller``` to install pyinstaller.
+
+2. Run ```pyinstaller --onefile main.py``` in the project directory to build it.
 
 ## Contributing
 Contributions to the Money Calculator project are welcome. You can contribute by:
