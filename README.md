@@ -30,7 +30,8 @@ This Python program allows users to input the number of each bill and coin denom
 - Japanese yen
 - Australian dollar 
 - Swiss franc 
-- Chinese renminbi 
+- Chinese renminbi
+- Polish Zloty
 
 
 ## Installation
