@@ -360,6 +360,57 @@ def calccnh():
     # Display the total amount in Chinese Renminbi (CNH).
     print(f"\nTotal amount in Chinese Renminbi: CNH {total_cnh:.2f}")
 
+def calcpln():
+    os.system('cls' if os.name == 'nt' else 'clear')  # Clear the screen.
+    print("Polish Zloty Money Calculator")  # Display a title for the PLN calculator.
+    print("Enter the number of each Polish Zloty Bill/Coin denomination:")  # Prompt the user to input the number of each PLN denomination.
+    
+    try:
+        # Input the quantity of each Polish Zloty bill/coin denomination.
+        one_grosz = int(input("Number of 1 grosz coins: "))
+        os.system('cls' if os.name == 'nt' else 'clear')  # Clear the screen.
+        two_grosze = int(input("Number of 2 grosze coins: "))
+        os.system('cls' if os.name == 'nt' else 'clear')  # Clear the screen.
+        five_groszy = int(input("Number of 5 groszy coins: "))
+        os.system('cls' if os.name == 'nt' else 'clear')  # Clear the screen.
+        ten_groszy = int(input("Number of 10 groszy coins: "))
+        os.system('cls' if os.name == 'nt' else 'clear')  # Clear the screen.
+        twenty_groszy = int(input("Number of 20 groszy coins: "))
+        os.system('cls' if os.name == 'nt' else 'clear')  # Clear the screen.
+        fifty_groszy = int(input("Number of 50 groszy coins: "))
+        os.system('cls' if os.name == 'nt' else 'clear')  # Clear the screen.
+        one_pln = int(input("Number of 1 PLN coins: "))
+        os.system('cls' if os.name == 'nt' else 'clear')  # Clear the screen.
+        two_pln = int(input("Number of 2 PLN coins: "))
+        os.system('cls' if os.name == 'nt' else 'clear')  # Clear the screen.
+        five_pln = int(input("Number of 5 PLN coins: "))
+        os.system('cls' if os.name == 'nt' else 'clear')  # Clear the screen.
+        ten_pln = int(input("Number of 10 PLN coins: "))
+        os.system('cls' if os.name == 'nt' else 'clear')  # Clear the screen.
+        twenty_pln = int(input("Number of 20 PLN banknotes: "))
+        os.system('cls' if os.name == 'nt' else 'clear')  # Clear the screen.
+        fifty_pln = int(input("Number of 50 PLN banknotes: "))
+        os.system('cls' if os.name == 'nt' else 'clear')  # Clear the screen.
+        hundred_pln = int(input("Number of 100 PLN banknotes: "))
+        os.system('cls' if os.name == 'nt' else 'clear')  # Clear the screen.
+        two_hundred_pln = int(input("Number of 200 PLN banknotes: "))
+        os.system('cls' if os.name == 'nt' else 'clear')  # Clear the screen.
+        five_hundred_pln = int(input("Number of 500 PLN banknotes: "))
+        os.system('cls' if os.name == 'nt' else 'clear')  # Clear the screen.
+    except ValueError:
+        print("Invalid input. Please enter a valid number.")
+        os.system('cls' if os.name == 'nt' else 'clear')  # Clear the screen.
+        calcpln()  # Call the function again to re-enter PLN values if there's invalid input.
+
+    # Calculate the total amount in Polish Zloty (PLN) based on user input.
+    total_pln = (one_grosz * 0.01) + (two_grosze * 0.02) + (five_groszy * 0.05) + (ten_groszy * 0.10) + \
+                (twenty_groszy * 0.20) + (fifty_groszy * 0.50) + (one_pln * 1) + (two_pln * 2) + \
+                (five_pln * 5) + (ten_pln * 10) + (twenty_pln * 20) + (fifty_pln * 50) + \
+                (hundred_pln * 100) + (two_hundred_pln * 200) + (five_hundred_pln * 500)
+    
+    # Display the total amount in Polish Zloty (PLN) with 2 decimal places.
+    print(f"\nTotal amount in Polish Zloty: PLN {total_pln:.2f}")
+
 # Main loop that allows the user to choose a currency calculator or exit.
 while True:
     print("1. Choose currency.")
@@ -377,6 +428,7 @@ while True:
         print("6. Japanese Yen")
         print("7. Swiss Franc")
         print("8. Chinese Renminbi (CNH)")
+        print("9. Polish Zloty (PLN)")
         
         selection = input("Selection: ")  # Prompt the user to select a currency calculator.
 
@@ -396,6 +448,8 @@ while True:
             calcchf()  # Call the Swiss Franc calculator function.
         elif selection == "8":
             calccnh()  # Call the Chinese Renminbi calculator function.
+        elif selection == "9":
+            calcpln()  # Call the Polish Zloty calculator function.
         else:
             os.system('cls' if os.name == 'nt' else 'clear')  # Clear the screen.
             print("Invalid selection.")  # Display an error message for an invalid selection.
