@@ -1,9 +1,6 @@
 import os
 
 # Function to calculate the total value of Euro bills and coins.
-import os
-
-# Function to calculate the total value of Euro bills and coins.
 def calceuro():
     os.system('cls' if os.name == 'nt' else 'clear')  # Clear the screen (Windows: 'cls', Unix: 'clear')
     print("Euro Money Calculator")  # Display a title for the Euro calculator.
